@@ -16,9 +16,82 @@
         android:background="#b1000000"></LinearLayout>
 
     <LinearLayout
+        android:id="@+id/innerLay"
         android:orientation="horizontal"
         android:layout_weight="1"
         android:layout_height="0dp"
         android:layout_width="fill_parent"
-        android:background="#b1000000"></LinearLayout>
+        android:background="#b1000000"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".7"
+            android:background="#b1000000">
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="New Switch"
+                android:id="@+id/switch1"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="#cc000000" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton"
+                    android:layout_weight="1"
+                    android:layout_alignBottom="@+id/innerLay"
+                    android:src="@mipmap/play"
+                    android:background="#ffffffff" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton2"
+                    android:layout_weight="1"
+                    android:layout_alignBottom="@+id/innerLay"
+                    android:src="@mipmap/pause2"
+                    android:background="#ffffffff" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton3"
+                    android:layout_weight="1"
+                    android:src="@mipmap/stop2"
+                    android:background="#ffffffff" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton4"
+                    android:layout_weight="1"
+                    android:background="#ffffffff"
+                    android:src="@mipmap/fastf" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton5"
+                    android:layout_weight="1"
+                    android:background="#ffffffff"
+                    android:src="@mipmap/repeat" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>
