@@ -13,7 +13,165 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_width="fill_parent"
-        android:background="#b1000000"></LinearLayout>
+        android:background="#b1000000"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:layout_weight="1"
+                android:src="@mipmap/up"
+                android:background="#ffffffff" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:layout_weight="1"
+                android:src="@mipmap/down"
+                android:background="#ffffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="168dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Radio Text"
+                android:id="@+id/textView"
+                android:background="#ff82ff20"
+                android:textColor="#ff000000"
+                android:textSize="65dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="1"
+                        android:id="@+id/button"
+                        android:layout_weight="1"
+                        android:textSize="50dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="2"
+                        android:id="@+id/button2"
+                        android:layout_weight="1"
+                        android:textSize="50dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="3"
+                        android:id="@+id/button3"
+                        android:layout_weight="1"
+                        android:textSize="50dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="4"
+                        android:id="@+id/button4"
+                        android:layout_weight="1"
+                        android:textSize="50dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="163dp">
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="New Switch"
+                    android:id="@+id/switch1"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="AM/FM"
+                    android:id="@+id/textView2"
+                    android:layout_weight="1"
+                    android:textColor="#ffffffff"
+                    android:textSize="40dp"
+                    android:gravity="center" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton3"
+                    android:layout_weight="1"
+                    android:src="@mipmap/power"
+                    android:background="#ff000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton4"
+                    android:layout_weight=".2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/textView3"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton5"
+                    android:layout_weight=".2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></LinearLayout>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/innerLay"
@@ -38,7 +196,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 android:text="New Switch"
-                android:id="@+id/switch1"
+                android:id="@+id/cdDeck"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
                 android:background="#cc000000" />
@@ -51,7 +209,7 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:id="@+id/imageButton"
+                    android:id="@+id/playBut"
                     android:layout_weight="1"
                     android:layout_alignBottom="@+id/innerLay"
                     android:src="@mipmap/play"
@@ -60,7 +218,7 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/pauseBut"
                     android:layout_weight="1"
                     android:layout_alignBottom="@+id/innerLay"
                     android:src="@mipmap/pause2"
@@ -69,7 +227,7 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/stopBut"
                     android:layout_weight="1"
                     android:src="@mipmap/stop2"
                     android:background="#ffffffff" />
@@ -77,7 +235,7 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:id="@+id/imageButton4"
+                    android:id="@+id/nextBut"
                     android:layout_weight="1"
                     android:background="#ffffffff"
                     android:src="@mipmap/fastf" />
@@ -85,7 +243,7 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/replayBut"
                     android:layout_weight="1"
                     android:background="#ffffffff"
                     android:src="@mipmap/repeat" />
